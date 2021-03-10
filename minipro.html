@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>ミニプロ</title>
+    <link rel="stylesheet" href="minipro.css">
+    <script src="minipro.js"></script>
+  </head>
+
+  <body>
+
+    <h1 id="title">筋トレタイマー</h1>
+    <div class="tabbox">
+      <div class="tabs">
+          <a class="tab1" id="settab1" onclick="ChangeTab1();">セット1</a>
+          <a class="tab2" id="settab2" onclick="ChangeTab2();">セット2</a>
+          <a class="tab3" id="settab3" onclick="ChangeTab3();">セット3</a>
+      </div>
+
+      <div id="tab1" class="tab tab1">
+        <div class="setbox">
+          <h1 id="set1">セット１</h1>
+          <input type="button" value="変更" onclick="change();">
+        </div>
+
+        <div class="timerbox">
+          <h2 id="timerpic">タイマー表示</h2>
+          <h3><span id="state">Are you ready?</span></h3>
+          <h4><span id="menuvalue">Menu : </span></h4>
+          <h1><span id="timervalue">30</span></h1>
+          <h4>セット：<span id="setstate">1</span>/回数：<span id="menustate">1</span></h4>
+
+          <input type="button" value="start" onclick="countstart();">
+          <input type="button" value="stop" onclick="countstop();">
+        </div>
+
+        <div class="menubox">
+          <h2>メニューリスト</h2>
+          <ul id="menu">
+            <li id="menu1">menu1<input type="button" value="変更"  id="button1" onclick="ChangeMenu(this);"><input type="button" value="削除"  id="delete1" onclick="DeleteMenu(this);"></li>
+          </ul>
+
+          <p><input type="text" value="メニューを追加" id="addmenu"><input type="button" value="追加" id="add" onclick="add();"></p>
+
+          <p><input type="button" value="編集" id="editmenu" onclick="Editmenu();"></p>
+        </div>
+
+        <div class="countbox">
+          <h2>時間</h2>
+          <ul>
+            <li>セット数：
+              <span id="setcount">1</span>セット
+              <input type="button" id="setcountchange" value="変更" onclick="ChangeSetCount();"></li>
+            <li>セット間：
+              <span id="interval">60</span>秒
+              <input type="button" id="intervalchange" value="変更" onclick="ChangeInterval();"></li>
+            <li>トレーニング：
+              <span id="training">30</span>秒
+              <input type="button" id="settimechange" value="変更" onclick="ChangeSetTime();"></li>
+            <li>レスト：
+              <span id="rest">10</span>秒
+              <input type="button" id="resttimechange" value="変更" onclick="ChangeRestTime();"></li>
+          </ul>
+          <p><input type="button" value="編集" id="edittime" onclick="Edittime();"></p>
+        </div>
+      </div>
+
+
+
+
+      <div id="tab2" class="tab tab2">
+        <div class="setbox2">
+          <h1 id="set2">セット３</h1>
+          <input type="button" value="変更" onclick="change2();">
+        </div>
+
+        <div class="timerbox2">
+          <h2>タイマー表示</h2>
+          <h3><span id="state2">Are you ready?</span></h3>
+          <h4><span id="menuvalue2">Menu : </span></h4>
+          <h1><span id="timervalue2">30</span></h1>
+          <h4>セット：<span id="setstate2">1</span>/回数：<span id="menustate2">1</span></h4>
+
+          <input type="button" value="start" onclick="countstart2();">
+          <input type="button" value="stop" onclick="countstop2();">
+        </div>
+
+        <div class="menubox2">
+          <h2>メニューリスト</h2>
+          <ul id="menu2">
+            <li id="menutwo1">menu1<input type="button" value="変更"  id="buttontwo1" onclick="ChangeMenu2(this);"><input type="button" value="削除"  id="deletetwo1" onclick="DeleteMenu2(this);"></li>
+          </ul>
+
+          <p><input type="text" value="メニューを追加" id="addmenu2"><input type="button" value="追加" id="add2" onclick="add2();"></p>
+
+          <p><input type="button" value="編集" id="editmenu2" onclick="Editmenu2();"></p>
+        </div>
+
+        <div class="countbox2">
+          <h2>時間</h2>
+          <ul>
+            <li>セット数：
+              <span id="setcount2">1</span>セット
+              <input type="button" id="setcountchange2" value="変更" onclick="ChangeSetCount2();"></li>
+            <li>セット間：
+              <span id="interval2">60</span>秒
+              <input type="button" id="intervalchange2" value="変更" onclick="ChangeInterval2();"></li>
+            <li>トレーニング：
+              <span id="training2">30</span>秒
+              <input type="button" id="settimechange2" value="変更" onclick="ChangeSetTime2();"></li>
+            <li>レスト：
+              <span id="rest2">10</span>秒
+              <input type="button" id="resttimechange2" value="変更" onclick="ChangeRestTime2();"></li>
+          </ul>
+          <p><input type="button" value="編集" id="edittime2" onclick="Edittime2();"></p>
+        </div>
+      </div>
+
+
+
+
+
+      <div id="tab3" class="tab tab3">
+        <div class="setbox3">
+          <h1 id="set3">セット３</h1>
+          <input type="button" value="変更" onclick="change3();">
+        </div>
+
+        <div class="timerbox3">
+          <h2>タイマー表示</h2>
+          <h3><span id="state3">Are you ready?</span></h3>
+          <h4><span id="menuvalue3">Menu : </span></h4>
+          <h1><span id="timervalue3">30</span></h1>
+          <h4>セット：<span id="setstate3">1</span>/回数：<span id="menustate3">1</span></h4>
+
+          <input type="button" value="start" onclick="countstart3();">
+          <input type="button" value="stop" onclick="countstop3();">
+        </div>
+
+        <div class="menubox3">
+          <h2>メニューリスト</h2>
+          <ul id="menu3">
+            <li id="menuthree1">menu1<input type="button" value="変更"  id="buttonthree1" onclick="ChangeMenu3(this);"><input type="button" value="削除"  id="deletethree1" onclick="DeleteMenu3(this);"></li>
+          </ul>
+
+          <p><input type="text" value="メニューを追加" id="addmenu3"><input type="button" value="追加" id="add3" onclick="add3();"></p>
+
+          <p><input type="button" value="編集" id="editmenu3" onclick="Editmenu3();"></p>
+        </div>
+
+        <div class="countbox3">
+          <h2>時間</h2>
+          <ul>
+            <li>セット数：
+              <span id="setcount3">1</span>セット
+              <input type="button" id="setcountchange3" value="変更" onclick="ChangeSetCount3();"></li>
+            <li>セット間：
+              <span id="interval3">60</span>秒
+              <input type="button" id="intervalchange3" value="変更" onclick="ChangeInterval3();"></li>
+            <li>トレーニング：
+              <span id="training3">30</span>秒
+              <input type="button" id="settimechange3" value="変更" onclick="ChangeSetTime3();"></li>
+            <li>レスト：
+              <span id="rest3">10</span>秒
+              <input type="button" id="resttimechange3" value="変更" onclick="ChangeRestTime3();"></li>
+          </ul>
+          <p><input type="button" value="編集" id="edittime3" onclick="Edittime3();"></p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </body>
+
+
+</html>

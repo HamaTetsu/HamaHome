@@ -1,0 +1,122 @@
+body{background: #ADD8E6;}
+
+#title{margin: 100px;}
+
+.tabbox{
+  margin: 50px;
+}
+
+.tab{
+  width: 500px;
+  height: 1000px;
+  margin: -2.5px;
+  float: left;
+}
+.tabs{
+  height: 30px;
+  color: white;
+}
+.tabs a {
+  width: 500px;
+  margin: -2.5px;
+  padding: 7px 30px;
+  border-radius: 10px 10px 0px 0px / 10px 10px 0px 0px;
+}
+.tab1{background: orange;}
+.tab2{background: green;}
+.tab3{background: blue;}
+#tab1{display: block;}
+#tab2{display: none;}
+#tab3{display: none;}
+.tab1 a {
+  width: 100px;
+}
+
+#set1{text-align: center;}
+#set2{text-align: center;}
+#set3{text-align: center;}
+
+.setbox{background: #FFEBCD;}
+.setbox2{background: #FFEBCD;}
+.setbox3{background: #FFEBCD;}
+
+.timerbox{
+  background: skyblue;
+  text-align: center;
+}
+.timerbox2{
+  background: skyblue;
+  text-align: center;
+}
+.timerbox3{
+  background: skyblue;
+  text-align: center;
+}
+
+#timervalue{font-size: 200%;}
+#timervalue2{font-size: 200%;}
+#timervalue3{font-size: 200%;}
+
+
+.menubox{
+  background: yellow;
+  text-align: center;
+}
+.menubox2{
+  background: yellow;
+  text-align: center;
+}
+.menubox3{
+  background: yellow;
+  text-align: center;
+}
+
+
+#menu{background: #FFFACD;}
+#menu2{background: #FFFACD;}
+#menu3{background: #FFFACD;}
+
+.countbox{
+  background: gray;
+  color: white;
+  text-align: center;
+}
+.countbox2{
+  background: gray;
+  color: white;
+  text-align: center;
+}
+.countbox3{
+  background: gray;
+  color: white;
+  text-align: center;
+}
+
+#addmenu{visibility: hidden;}
+#add{visibility: hidden;}
+#button1{visibility: hidden;}
+#delete1{visibility: hidden;}
+#setcountchange{visibility: hidden;}
+#intervalchange{visibility: hidden;}
+#settimechange{visibility: hidden;}
+#resttimechange{visibility: hidden;}
+
+
+#addmenu2{visibility: hidden;}
+#add2{visibility: hidden;}
+#buttontwo1{visibility: hidden;}
+#deletetwo1{visibility: hidden;}
+#setcountchange2{visibility: hidden;}
+#intervalchange2{visibility: hidden;}
+#settimechange2{visibility: hidden;}
+#resttimechange2{visibility: hidden;}
+
+
+#addmenu3{visibility: hidden;}
+#add3{visibility: hidden;}
+#buttonthree1{visibility: hidden;}
+#deletethree1{visibility: hidden;}
+#setcountchange3{visibility: hidden;}
+#intervalchange3{visibility: hidden;}
+#settimechange3{visibility: hidden;}
+#resttimechange3{visibility: hidden;}
